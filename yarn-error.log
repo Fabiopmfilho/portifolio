@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add -D eslint eslint-confignext prettier
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @chackra-ui/icons
 
 PATH: 
-  C:\Python310\Scripts\;C:\Python310\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin\;C:\Users\fabio\AppData\Local\Microsoft\WindowsApps;C:\Users\fabio\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fabio\AppData\Roaming\npm;C:\Users\fabio\AppData\Local\Yarn\bin;C:\Program Files\vtex\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\fabio\Downloads\cmder\vendor\bin;C:\Users\fabio\Downloads\cmder
+  C:\Users\fabio\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\fabio\bin;C:\Python310\Scripts;C:\Python310;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin;C:\Users\fabio\AppData\Local\Microsoft\WindowsApps;C:\Users\fabio\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\fabio\AppData\Roaming\npm;C:\Users\fabio\AppData\Local\Yarn\bin;C:\Program Files\vtex\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\fabio\Downloads\cmder\vendor\bin;C:\Users\fabio\Downloads\cmder;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
 
 Yarn version: 
   1.22.15
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/eslint-confignext: Not found
+  Error: https://registry.yarnpkg.com/@chackra-ui%2ficons: Not found
       at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66140:18)
       at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140885:22)
       at Request.emit (node:events:390:28)
@@ -30,9 +30,14 @@ npm manifest:
   {
     "name": "portifolio",
     "version": "1.0.0",
-    "main": "index.js",
+    "description": "website for apresentation my projects",
+    "scripts": {
+      "dev": "next dev -H 0.0.0.0",
+      "build": "next build",
+      "prettier": "prettier -write ."
+    },
     "repository": "https://github.com/Fabiopmfilho/portifolio.git",
-    "author": "Fabio Filho <fabio.filho@acct.global>",
+    "author": "Fabio Filho",
     "license": "MIT",
     "dependencies": {
       "@chakra-ui/react": "^1.8.5",
